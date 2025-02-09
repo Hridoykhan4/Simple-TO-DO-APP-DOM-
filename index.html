@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style></style>
+  </head>
+  <body>
+    <div
+      class="min-h-screen bg-gradient-to-r p-5 from-cyan-800 to-blue-800 flex flex-col items-center"
+    >
+      <div class="bg-white max-w-[400px] rounded-xl p-8 space-y-3 mt-5">
+        <h2>To-Do List</h2>
+        <div class="flex flex-col lg:flex-row gap-2">
+          <input
+            id="input-box"
+            type="text"
+            class="input input-bordered outline-none"
+            placeholder="Add Your Text"
+          />
+          <button
+            onclick="addTask()"
+            class="btn self-start bg-orange-500 px-10 hover:bg-orange-300 text-white"
+          >
+            Add
+          </button>
+        </div>
+        <ul
+          id="list-container"
+          class="flex flex-col flex-wrap overflow-y-auto max-w-[300px]"
+        ></ul>
+      </div>
+    </div>
+
+    <script src="./scripts/app.js"></script>
+  </body>
+</html>
