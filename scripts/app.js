@@ -4,7 +4,7 @@ const listContainer = document.getElementById("list-container");
 const createTask = (task) => {
   const li = document.createElement("li");
   li.textContent = task;
-  li.className = `bg-gray-300 rounded-xl my-2 p-3 font-medium flex justify-between items-center`;
+  li.className = `bg-gray-300 rounded-xl my-2 p-3 gap-3 font-medium flex justify-between items-center`;
 
   const button = document.createElement("button");
   button.classList.add("btn", "px-6", "btn-error", "text-white");
